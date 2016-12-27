@@ -12,7 +12,10 @@ func secureHandler(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("Content-Type", "text/plain")
 
 	log.Println("got an HTTPS request with major version:", req.ProtoMajor)
-	w.Write([]byte("Hello world!"))
+	_, err := w.Write([]byte("Hello world!"))
+	if err != nil {
+		log.Println("error writing the HTTP response")
+	}
 }
 
 func main() {
