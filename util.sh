@@ -16,6 +16,7 @@ if [[ "$#" -gt 0 ]]; then
 		case "$1" in
       --freshen)
       freshen
+      shift;
       ;;
     esac
   done
