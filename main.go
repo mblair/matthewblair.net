@@ -12,8 +12,9 @@ import (
 )
 
 var (
-	tmpl *template.Template
-	site []byte
+	tmpl    *template.Template
+	content []byte
+	css     []byte
 )
 
 func markDowner(input []byte) template.HTML {
@@ -23,17 +24,24 @@ func markDowner(input []byte) template.HTML {
 
 func init() {
 	tmpl = template.Must(template.New("template.html").Funcs(template.FuncMap{"markDown": markDowner}).ParseFiles("template.html"))
-	site, _ = ioutil.ReadFile("home.md")
+	content, _ = ioutil.ReadFile("home.md")
+	css, _ = ioutil.ReadFile("style.css")
 }
 
 func secureHandler(w http.ResponseWriter, req *http.Request) {
 	log.Println("got an HTTPS request with major version:", req.ProtoMajor)
 
+	if req.URL.Path == "style.css" {
+		w.Header().Set("Content-Type", "text/css")
+		w.Write(css)
+		return
+	}
+
 	var p struct {
 		Body []byte
 	}
 
-	p.Body = site
+	p.Body = content
 
 	err := tmpl.ExecuteTemplate(w, "template.html", p)
 	if err != nil {
