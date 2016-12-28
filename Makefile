@@ -1,10 +1,11 @@
-all: setup fmt install lint docker
+all: freshen fmt install lint docker
 
-setup:
-	./go.sh
+freshen:
+	./util.sh --freshen
 
 fmt:
 	goimports -w *.go
+	shfmt -w *.sh
 	markdownfmt -w *.md
 
 install:
@@ -19,8 +20,8 @@ vendor:
 docker:
 	docker build -t web:$$(git rev-parse --short HEAD) .
 
-restart:
+restart: all
 	docker stop $$(docker ps --quiet)
 	docker run -p 80 -v /var/cache/acme/:/var/cache/acme/ web:$$(git rev-parse --short HEAD)
 
-.PHONY: all fmt lint vendor docker restart
+.PHONY: all freshen fmt install lint vendor docker restart
