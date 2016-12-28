@@ -1,4 +1,7 @@
-all: fmt install lint docker
+all: setup fmt install lint docker
+
+setup:
+	./go.sh
 
 fmt:
 	goimports -w *.go
