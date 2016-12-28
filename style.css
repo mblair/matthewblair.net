@@ -1,4 +1,5 @@
 body {
   background-image: linear-gradient(135deg, #271b38, #563d7c, #7952b3);
-  color: white;
+  color: #fff;
+  padding: 5rem 5rem;
 }

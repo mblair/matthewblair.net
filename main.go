@@ -31,7 +31,7 @@ func init() {
 func secureHandler(w http.ResponseWriter, req *http.Request) {
 	log.Println("got an HTTPS request with major version:", req.ProtoMajor)
 
-	if req.URL.Path == "style.css" {
+	if req.URL.Path == "/style.css" {
 		w.Header().Set("Content-Type", "text/css")
 		w.Write(css)
 		return
@@ -70,6 +70,7 @@ func main() {
 	m := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
 		Email:      "me@matthewblair.net",
+		Cache:      autocert.DirCache("/var/cache/acme/"),
 		HostPolicy: autocert.HostWhitelist("matthewblair.net"),
 	}
 

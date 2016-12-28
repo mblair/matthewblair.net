@@ -19,7 +19,8 @@ vendor:
 docker:
 	docker build -t web:$$(git rev-parse --short HEAD) .
 
-run:
-	docker run -p 80 web:$$(git rev-parse --short HEAD)
+restart:
+	docker stop $$(docker ps --quiet)
+	docker run -p 80 -v /var/cache/acme/:/var/cache/acme/ web:$$(git rev-parse --short HEAD)
 
-.PHONY: all fmt lint vendor docker run
+.PHONY: all fmt lint vendor docker restart
