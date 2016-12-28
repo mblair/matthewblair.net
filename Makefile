@@ -1,19 +1,22 @@
-all: fmt lint docker
+all: fmt install lint docker
 
 fmt:
 	goimports -w *.go
 	markdownfmt -w *.md
 
+install:
+	go install github.com/mblair/matthewblair.net
+
 lint:
-	gometalinter --deadline=60s .
+	gometalinter --errors --deadline=60s .
 
 vendor:
-	 govend --prune -v -l
+	govend --prune -v -l
 
 docker:
 	docker build -t web:$$(git rev-parse --short HEAD) .
 
 run:
-	docker run web:$$(git rev-parse --short HEAD)
+	docker run -p 80 web:$$(git rev-parse --short HEAD)
 
 .PHONY: all fmt lint vendor docker run
