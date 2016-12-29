@@ -8,4 +8,3 @@ COPY . /go/src/github.com/mblair/matthewblair.net
 RUN apk update && apk add git
 RUN go install github.com/mblair/matthewblair.net
 ENTRYPOINT ["/go/bin/matthewblair.net"]
-EXPOSE 80 443
