@@ -1,5 +1,9 @@
 body {
   background-image: linear-gradient(135deg, #271b38, #563d7c, #7952b3);
+  color: #cdbfe3;
+  padding: 3rem 3rem;
+}
+
+a {
   color: #fff;
-  padding: 5rem 5rem;
 }

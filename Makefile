@@ -1,4 +1,4 @@
-all: clean freshen fmt install lint docker
+all: clean fmt install lint docker
 
 clean:
 	rm -f matthewblair.net
