@@ -28,6 +28,7 @@ restart: all
 	# TODO: only run the all target if an image with this Git SHA1 exists
 	# check for dirtiness, too
 	docker stop $$(docker ps --quiet)
-	docker run -p 80:80 -p 443:443 -d -v /var/cache/acme/:/var/cache/acme/ web:$$(git rev-parse --short HEAD)
+	# TODO: add  -p 443:443 later
+	docker run -p 80:80 -d web:$$(git rev-parse --short HEAD)
 
 .PHONY: all freshen fmt install lint vendor docker restart
