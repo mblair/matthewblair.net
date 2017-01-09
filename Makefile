@@ -11,6 +11,8 @@ fmt:
 	goimports -w *.go
 	shfmt -w *.sh
 	markdownfmt -w *.md
+	css-beautify -r *.css
+	html-beautify -r *.html
 
 install:
 	go install github.com/mblair/matthewblair.net
