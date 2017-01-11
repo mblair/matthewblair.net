@@ -71,7 +71,7 @@ func main() {
 		Prompt:     autocert.AcceptTOS,
 		Email:      "me@matthewblair.net",
 		Cache:      autocert.DirCache("/var/cache/acme/"),
-		HostPolicy: autocert.HostWhitelist("matthewblair.net", "mblair.io"),
+		HostPolicy: autocert.HostWhitelist("matthewblair.net"),
 	}
 
 	s := http.Server{
