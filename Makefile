@@ -26,8 +26,12 @@ vendor:
 docker:
 	docker build -t web:$$(git rev-parse --short HEAD) .
 
-restart: all
+stop:
 	docker stop $$(docker ps --quiet)
+
+run: docker
 	docker run -p 80:80 -p 443:443 -v /var/cache/acme:/var/cache/acme -d web:$$(git rev-parse --short HEAD)
 
-.PHONY: all freshen fmt install lint vendor docker restart
+restart: all stop run
+
+.PHONY: all freshen fmt install lint vendor docker stop run restart
