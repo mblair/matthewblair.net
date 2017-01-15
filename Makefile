@@ -30,7 +30,7 @@ stop:
 	docker stop $$(docker ps --quiet)
 
 run: docker
-	docker run -p 80:80 -p 443:443 -v /var/cache/acme:/var/cache/acme -d web:$$(git rev-parse --short HEAD)
+	docker run -p 80:80 -p 443:443 -v /var/cache/acme:/var/cache/acme -d --restart=always web:$$(git rev-parse --short HEAD)
 
 restart: all stop run
 
