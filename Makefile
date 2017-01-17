@@ -23,6 +23,9 @@ lint:
 vendor:
 	govend --prune -v -l
 
+vendorupdate:
+	govend --prune -u -v
+
 docker:
 	docker build -t web:$$(git rev-parse --short HEAD) .
 
