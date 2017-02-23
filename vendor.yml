@@ -6,4 +6,4 @@ vendors:
 - path: golang.org/x/crypto
   rev: 453249f01cfeb54c3d549ddb75ff152ca243f9d8
 - path: golang.org/x/net
-  rev: 61557ac0112b576429a0df080e1c2cef5dfbb642
+  rev: 6b27048ae5e6ad1ef927e72e437531493de612fe
