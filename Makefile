@@ -18,7 +18,8 @@ install:
 	go install github.com/mblair/matthewblair.net
 
 lint:
-	gometalinter --errors --deadline=60s .
+	# 60s isn't enough for my DO droplet :-/
+	gometalinter --errors --deadline=180s .
 
 vendor:
 	govend --prune -v -l
