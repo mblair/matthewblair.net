@@ -8,6 +8,7 @@ freshen:
 	./util.sh --freshen
 
 fmt:
+	gsed -i'' -e's/[[:space:]]*$$//g' Makefile
 	goimports -w *.go
 	shfmt -w *.sh
 	markdownfmt -w *.md
