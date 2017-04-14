@@ -8,7 +8,8 @@ freshen:
 	./util.sh --freshen
 
 fmt:
-	gsed -i'' -e's/[[:space:]]*$$//g' Makefile
+	# TODO: guard this
+	#gsed -i'' -e's/[[:space:]]*$$//g' Makefile
 	goimports -w *.go
 	shfmt -w *.sh
 	markdownfmt -w *.md
@@ -37,6 +38,6 @@ stop:
 run: docker
 	docker run -p 80:80 -p 443:443 -v /var/cache/acme:/var/cache/acme -d --restart=always web:$$(git rev-parse --short HEAD)
 
-restart: all stop run
+restart: docker stop run
 
 .PHONY: all freshen fmt install lint vendor docker stop run restart
