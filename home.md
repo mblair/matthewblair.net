@@ -28,5 +28,3 @@ Elsewhere:
 Contact: Feel free to [email me](mailto:me@matthewblair.net). My mobile number is 631-987-3706, and I'll rely on you to use that appropriately.
 
 If you need to contact me privately, please use my PGP key, which is on [pgp.mit.edu](http://pgp.mit.edu/pks/lookup?op=get&search=0x4D1755E668B34D56) and [Keybase](https://keybase.io/mattyb).
-
-[Temporary coding class link](https://code-maven.com/todo-in-html-and-javascript)
