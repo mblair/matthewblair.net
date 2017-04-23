@@ -4,4 +4,4 @@ vendors:
 - path: github.com/shurcooL/sanitized_anchor_name
   rev: 1dba4b3954bc059efc3991ec364f9f9a35f597d2
 - path: golang.org/x/crypto
-  rev: 12c985af8526c1f6f0c463bbfd9d69623d13b323
+  rev: 96846453c37f0876340a66a47f3f75b1f3a6cd2d
