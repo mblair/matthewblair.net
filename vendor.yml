@@ -2,6 +2,6 @@ vendors:
 - path: github.com/russross/blackfriday
   rev: b253417e1cb644d645a0a3bb1fa5034c8030127c
 - path: github.com/shurcooL/sanitized_anchor_name
-  rev: 1dba4b3954bc059efc3991ec364f9f9a35f597d2
+  rev: 79c90efaf01eddc01945af5bc1797859189b830b
 - path: golang.org/x/crypto
-  rev: 96846453c37f0876340a66a47f3f75b1f3a6cd2d
+  rev: 3543873453996aaab2fc6b3928a35fc5ca2b5afb
