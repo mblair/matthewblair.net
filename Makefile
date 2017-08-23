@@ -13,7 +13,7 @@ fmt:
 	goimports -w *.go
 	shfmt -w *.sh
 	markdownfmt -w *.md
-	css-beautify -r *.css
+	prettier --write *.css
 	html-beautify -r *.html
 
 install:

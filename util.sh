@@ -14,10 +14,10 @@ freshen() {
 if [[ "$#" -gt 0 ]]; then
 	while [[ "$#" -gt 0 ]]; do
 		case "$1" in
-			--freshen)
-				freshen
-				shift
-				;;
+		--freshen)
+			freshen
+			shift
+			;;
 		esac
 	done
 fi
