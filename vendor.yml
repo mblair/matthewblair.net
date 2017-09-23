@@ -2,4 +2,4 @@ vendors:
 - path: github.com/russross/blackfriday
   rev: 4048872b16cc0fc2c5fd9eacf0ed2c2fedaa0c8c
 - path: golang.org/x/crypto
-  rev: faadfbdc035307d901e69eea569f5dda451a3ee3
+  rev: 7d9177d70076375b9a59c8fde23d52d9c4a7ecd5
