@@ -1,8 +1,8 @@
-@import url('https://rsms.me/inter/inter-ui.css');
+@import url("https://rsms.me/inter/inter-ui.css");
 
 body {
-  font-family: 'Inter UI', sans-serif;
-  background: linear-gradient(-135deg,#1400c8,#b900b4,#f50000) fixed;
+  font-family: "Inter UI", sans-serif;
+  background: linear-gradient(-135deg, #1400c8, #b900b4, #f50000) fixed;
   color: #cdbfe3;
   padding: 3rem 3rem;
 }
