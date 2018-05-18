@@ -24,10 +24,10 @@ lint:
 	gometalinter --errors --deadline=180s .
 
 vendor:
-	govend --prune -v -l
+	dep ensure
 
 vendorupdate:
-	govend --prune -u -v
+	dep ensure -update
 
 docker:
 	docker build -t web:$$(git rev-parse --short HEAD) .
