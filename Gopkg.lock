@@ -14,7 +14,7 @@
     "acme",
     "acme/autocert"
   ]
-  revision = "1a580b3eff7814fc9b40602fd35256c63b50f491"
+  revision = "b47b1587369238182299fe4dad77d05b8b461e06"
 
 [solve-meta]
   analyzer-name = "dep"
