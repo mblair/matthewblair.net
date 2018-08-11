@@ -2,23 +2,30 @@
 
 
 [[projects]]
+  digest = "1:8bc629776d035c003c7814d4369521afe67fdb8efc4b5f66540d29343b98cf23"
   name = "github.com/russross/blackfriday"
   packages = ["."]
+  pruneopts = "UT"
   revision = "55d61fa8aa702f59229e6cff85793c22e580eaf5"
   version = "v1.5.1"
 
 [[projects]]
   branch = "master"
+  digest = "1:dedf20eb0d3e8d6aa8a4d3d2fae248222b688ed528201995e152cc497899123c"
   name = "golang.org/x/crypto"
   packages = [
     "acme",
-    "acme/autocert"
+    "acme/autocert",
   ]
-  revision = "a2144134853fc9a27a7b1e3eb4f19f1a76df13c9"
+  pruneopts = "UT"
+  revision = "de0752318171da717af4ce24d0a2e8626afaeb11"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "03dae3c1a018b63a4de9d1e8c1ed7fc1f6dd2c99fa846da9c8935676009115de"
+  input-imports = [
+    "github.com/russross/blackfriday",
+    "golang.org/x/crypto/acme/autocert",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
