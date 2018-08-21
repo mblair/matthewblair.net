@@ -18,7 +18,7 @@
     "acme/autocert",
   ]
   pruneopts = "UT"
-  revision = "de0752318171da717af4ce24d0a2e8626afaeb11"
+  revision = "614d502a4dac94afa3a6ce146bd1736da82514c6"
 
 [solve-meta]
   analyzer-name = "dep"
