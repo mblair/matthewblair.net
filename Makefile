@@ -21,7 +21,7 @@ install:
 
 lint:
 	# 60s isn't enough for my DO droplet :-/
-	gometalinter --errors --deadline=180s .
+	gometalinter --errors --deadline=180s github.com/mblair/matthewblair.net
 
 vendor:
 	dep ensure

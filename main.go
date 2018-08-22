@@ -49,22 +49,7 @@ func secureHandler(w http.ResponseWriter, req *http.Request) {
 	}
 }
 
-func insecureHandler(w http.ResponseWriter, req *http.Request) {
-	http.Redirect(w, req,
-		"https://"+req.Host+req.URL.String(),
-		http.StatusMovedPermanently,
-	)
-}
-
 func main() {
-	go func() {
-		log.Println("Listening on 80; Go to http://matthewblair.net")
-		err := http.ListenAndServe(":http", http.HandlerFunc(insecureHandler))
-		if err != nil {
-			log.Fatal(err)
-		}
-	}()
-
 	http.HandleFunc("/", secureHandler)
 
 	m := autocert.Manager{
@@ -73,6 +58,13 @@ func main() {
 		Cache:      autocert.DirCache("/var/cache/acme/"),
 		HostPolicy: autocert.HostWhitelist("matthewblair.net"),
 	}
+
+	insecure := &http.Server{
+		Handler: m.HTTPHandler(nil),
+		Addr:    ":80",
+	}
+
+	go insecure.ListenAndServe()
 
 	s := http.Server{
 		Addr:      ":https",
