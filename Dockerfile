@@ -1,4 +1,4 @@
-FROM golang:1.11-rc-alpine
+FROM golang:1.11-alpine
 MAINTAINER Matt Blair <me@matthewblair.net>
 
 WORKDIR /go/src/github.com/mblair/matthewblair.net
