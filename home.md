@@ -4,7 +4,7 @@ I live in Long Beach, California with my wife, [Morgan Brunelle](https://www.mor
 
 I work on server infrastructure and security at [Figma](https://www.figma.com). Previously, I spent five years at [Flipboard](https://flipboard.com), eventually leading the site reliability engineering team. Before that, I attended Cornell University and Stony Brook University's Southampton campus, where I met my wife.
 
-Outside of work, I'm an [avid cyclist](https://www.strava.com/athletes/mattyblair) and home cook.
+Outside of work, I'm an [avid cyclist](https://www.strava.com/athletes/mattyblair), scuba diver and home cook.
 
 This site's source [is on GitHub](https://github.com/mblair/matthewblair.net)!
 
