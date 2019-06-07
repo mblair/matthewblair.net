@@ -18,7 +18,7 @@
     "acme/autocert",
   ]
   pruneopts = "UT"
-  revision = "cbcb750295291b33242907a04be40e80801d0cfc"
+  revision = "f99c8df09eb5bff426315721bfa5f16a99cad32c"
 
 [[projects]]
   branch = "master"
@@ -26,7 +26,7 @@
   name = "golang.org/x/net"
   packages = ["idna"]
   pruneopts = "UT"
-  revision = "a4d6f7feada510cc50e69a37b484cb0fdc6b7876"
+  revision = "1492cefac77f61bc789c00f41ead8f8d7307cd21"
 
 [[projects]]
   digest = "1:8d8faad6b12a3a4c819a3f9618cb6ee1fa1cfc33253abeeea8b55336721e3405"
