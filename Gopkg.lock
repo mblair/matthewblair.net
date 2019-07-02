@@ -11,14 +11,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:9ebbac90dda5bf921f6243b64d5abd0674ada63cdee056ff671f8658a00034ab"
+  digest = "1:cb823a5f7777276059b25eaadda6a12892f3beb6d0deee01df0d8f8692ffcc82"
   name = "golang.org/x/crypto"
   packages = [
     "acme",
     "acme/autocert",
   ]
   pruneopts = "UT"
-  revision = "ea8f1a30c4438cc8b13f05538385ad8dc6049b43"
+  revision = "4def268fd1a49955bfb3dda92fe3db4f924f2285"
 
 [[projects]]
   branch = "master"
@@ -26,7 +26,7 @@
   name = "golang.org/x/net"
   packages = ["idna"]
   pruneopts = "UT"
-  revision = "b5b0513f8c1bb7c1e3e6f168fba117131fe2614a"
+  revision = "da137c7871d730100384dbcf36e6f8fa493aef5b"
 
 [[projects]]
   digest = "1:8d8faad6b12a3a4c819a3f9618cb6ee1fa1cfc33253abeeea8b55336721e3405"
