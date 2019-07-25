@@ -1,10 +1,10 @@
 FROM golang:1.12-alpine
 MAINTAINER Matt Blair <me@matthewblair.net>
 
-WORKDIR /go/src/github.com/mblair/matthewblair.net
+WORKDIR /app
 
-COPY . /go/src/github.com/mblair/matthewblair.net
+COPY . .
 
 RUN apk update && apk add git
-RUN go install github.com/mblair/matthewblair.net
-ENTRYPOINT ["/go/bin/matthewblair.net"]
+RUN go build
+ENTRYPOINT ["/app/mattyb"]
