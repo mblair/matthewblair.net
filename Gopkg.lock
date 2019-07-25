@@ -26,7 +26,7 @@
   name = "golang.org/x/net"
   packages = ["idna"]
   pruneopts = "UT"
-  revision = "da137c7871d730100384dbcf36e6f8fa493aef5b"
+  revision = "ca1201d0de80cfde86cb01aea620983605dfe99b"
 
 [[projects]]
   digest = "1:8d8faad6b12a3a4c819a3f9618cb6ee1fa1cfc33253abeeea8b55336721e3405"
