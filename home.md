@@ -2,7 +2,7 @@ Hi, I'm Matt Blair, and this is my little corner of the Internet.
 
 I live in Long Beach, California with my wife, [Morgan Brunelle](https://www.morganbrunelle.com) and a lot of animals. I was born in 1987 in Brooklyn, New York, grew up on Long Island, and moved to California in 2011.
 
-I work on server infrastructure and security at [Figma](https://www.figma.com). Previously, I spent five years at [Flipboard](https://flipboard.com), eventually leading the site reliability engineering team. Before that, I attended Cornell University and Stony Brook University's Southampton campus, where I met my wife.
+I've worked on server infrastructure and security at [Figma](https://www.figma.com) for the last three years or so. Early next year, I'm joining [Google](https://wwww.google.com) to work on security infrastructure. Previously, I spent five years at [Flipboard](https://flipboard.com), eventually leading the site reliability engineering team. Before that, I attended Cornell University and Stony Brook University's Southampton campus, where I met my wife.
 
 Outside of work, I'm an [avid cyclist](https://www.strava.com/athletes/mattyblair), scuba diver and home cook.
 
