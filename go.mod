@@ -1,4 +1,4 @@
-module https: //github.coim/mblair/matthewblair.net
+module mattyb
 
 go 1.13
 
