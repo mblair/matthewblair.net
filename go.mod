@@ -1,10 +1,11 @@
-module matthewblair.net
+module https: //github.coim/mblair/matthewblair.net
 
-go 1.14
+go 1.13
 
 require (
-	github.com/russross/blackfriday v1.5.2
-	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
-	golang.org/x/net v0.0.0-20190724013045-ca1201d0de80 // indirect
+	github.com/russross/blackfriday v2.0.0+incompatible
+	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
+	golang.org/x/crypto v0.0.0-20191206172530-e9b2fee46413
+	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553 // indirect
 	golang.org/x/text v0.3.2 // indirect
 )
