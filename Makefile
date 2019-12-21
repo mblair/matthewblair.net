@@ -1,7 +1,7 @@
-all: clean fmt install lint docker
+all: clean fmt build docker
 
 clean:
-	rm -f matthewblair.net
+	rm -f mattyb
 	go clean -i
 
 freshen:
@@ -16,12 +16,8 @@ fmt:
 	prettier --write *.css
 	html-beautify -r *.html
 
-install:
-	go install github.com/mblair/matthewblair.net
-
-lint:
-	# 60s isn't enough for my DO droplet :-/
-	gometalinter --errors --deadline=180s github.com/mblair/matthewblair.net
+build:
+	go install
 
 vendor:
 	dep ensure
@@ -40,4 +36,4 @@ run: docker
 
 restart: docker stop run
 
-.PHONY: all freshen fmt install lint vendor docker stop run restart
+.PHONY: all freshen fmt install vendor docker stop run restart

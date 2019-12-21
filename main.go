@@ -18,7 +18,7 @@ var (
 )
 
 func markDowner(input []byte) template.HTML {
-	s := blackfriday.MarkdownCommon(input)
+	s := blackfriday.Run(input)
 	return template.HTML(s)
 }
 
