@@ -16,14 +16,11 @@ fmt:
 	prettier --write *.css
 	html-beautify -r *.html
 
+vendorupdate:
+	go get -u ./...
+
 build:
 	go install
-
-vendor:
-	dep ensure
-
-vendorupdate:
-	dep ensure -update
 
 docker:
 	docker build -t web:$$(git rev-parse --short HEAD) .
