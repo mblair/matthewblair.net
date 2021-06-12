@@ -5,6 +5,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN apk update && apk add git
+RUN apk update && apk add git gcc
 RUN go build
 ENTRYPOINT ["/app/mattyb"]
