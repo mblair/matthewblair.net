@@ -18,7 +18,6 @@ Elsewhere:
 -	[Goodreads](https://www.goodreads.com/user/show/5232574-matt-blair)
 -	[Hacker News](https://news.ycombinator.com/user?id=mattyb)
 -	[Facebook](https://www.facebook.com/matthewblair)
--	[Flipboard](https://flipboard.com/@mb)
 -	[SlideShare](http://www.slideshare.net/matthewblair/slideshows)
 
 A couple of my recorded technical talks from ages ago are online; one was at [HBaseCon](https://vimeo.com/128194533), and the other was at a [RethinkDB meetup](https://www.youtube.com/watch?v=3ScLnROJ-iU). I was also on [a panel](https://figma.splashthat.com/) on mentorship for underrepresented folks in the technology industry.
