@@ -1,6 +1,6 @@
 Hi, I'm Matt Blair, and this is my little corner of the Internet.
 
-I live in Long Beach, California with my wife, [Morgan Brunelle](https://www.morganbrunelle.com), son and a lot of animals. I was born in 1987 in Brooklyn, New York, grew up on Long Island, and moved to California in 2011.
+I live in Long Beach, California with my wife, son and a lot of animals. I was born in 1987 in Brooklyn, New York, grew up on Long Island, and moved to California in 2011.
 
 I'm an avid home cook, carpenter, gardener, skier and [cyclist](https://www.strava.com/athletes/mattyblair).
 
