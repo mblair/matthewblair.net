@@ -17,7 +17,8 @@ fmt:
 	html-beautify -r *.html
 
 vendorupdate:
-	go get -u ./...
+	go get -u
+	go mod tidy
 
 build:
 	go install
