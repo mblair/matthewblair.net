@@ -27,7 +27,7 @@ docker:
 	docker build -t web:$$(git rev-parse --short HEAD) .
 
 dockerprune:
-	docker system prune -a
+	docker system prune -a -f
 
 stop:
 	docker stop $$(docker ps --quiet)
