@@ -16,7 +16,7 @@ fmt:
 	prettier --write *.css
 	html-beautify -r *.html
 
-vendorupdate:
+depupdate:
 	go get -u
 	go mod tidy
 
