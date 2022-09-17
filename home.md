@@ -2,9 +2,9 @@ Hi, I'm Matt Blair, and this is my little corner of the Internet.
 
 I live in Long Beach, California with my wife, son and a lot of animals. I was born in 1987 in Brooklyn, New York, grew up on Long Island, and moved to California in 2011.
 
-I'm an avid home cook, carpenter, gardener, skier and [cyclist](https://www.strava.com/athletes/mattyblair).
+I'm an avid home cook, photographer and occasional cyclist.
 
-In order to fund all these habits, I lead a team working on security infrastructure at [Google](https://www.google.com). Previously, I was an early engineer at [Figma](https://www.figma.com). Prior to that, I spent five years at [Flipboard](https://flipboard.com), eventually leading the site reliability engineering team. Before that, I attended Cornell University and Stony Brook University's Southampton campus, where I met my wife.
+In order to fund these habits, I lead a team working on security infrastructure at [Google](https://www.google.com). Previously, I was an early engineer at [Figma](https://www.figma.com). Prior to that, I spent five years at [Flipboard](https://flipboard.com), eventually leading the site reliability engineering team. Before that, I attended Cornell University and Stony Brook University's Southampton campus, where I met my wife.
 
 This site's source [is on GitHub](https://github.com/mblair/matthewblair.net), if that's your jam.
 
