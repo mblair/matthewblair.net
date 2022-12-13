@@ -18,7 +18,7 @@ fmt:
 
 depupdate:
 	go get -u
-	go mod tidy
+	go mod tidy -compat=1.17
 
 build:
 	go install
