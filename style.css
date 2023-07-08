@@ -1,7 +1,14 @@
-@import url("https://rsms.me/inter/inter-ui.css");
+@import url("https://rsms.me/inter/inter.css");
 
 body {
-  font-family: "Inter UI", sans-serif;
+  :root {
+    font-family: "Inter", sans-serif;
+  }
+  @supports (font-variation-settings: normal) {
+    :root {
+      font-family: "Inter var", sans-serif;
+    }
+  }
   background: linear-gradient(-135deg, #1400c8, #b900b4, #f50000) fixed;
   color: #cdbfe3;
   padding: 3rem 3rem;
