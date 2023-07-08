@@ -13,8 +13,7 @@ fmt:
 	goimports -w *.go
 	shfmt -w *.sh
 	markdownfmt -w *.md
-	prettier --write *.css
-	html-beautify -r *.html
+	prettier --write *.css *.html
 
 depupdate:
 	go get -u
