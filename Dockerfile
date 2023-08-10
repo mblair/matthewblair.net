@@ -1,4 +1,4 @@
-FROM golang:1.21-rc-alpine
+FROM golang:1.21-alpine
 MAINTAINER Matt Blair <me@matthewblair.net>
 
 WORKDIR /app
