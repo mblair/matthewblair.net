@@ -1,5 +1,5 @@
 FROM golang:1.23-alpine
-MAINTAINER Matt Blair <me@matthewblair.net>
+LABEL org.opencontainers.image.authors="me@matthewblair.net"
 
 WORKDIR /app
 
