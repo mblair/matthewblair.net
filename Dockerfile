@@ -1,4 +1,4 @@
-FROM golang:1.23-alpine
+FROM golang:1.24-rc
 LABEL org.opencontainers.image.authors="me@matthewblair.net"
 
 WORKDIR /app
